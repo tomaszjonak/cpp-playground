@@ -1,0 +1,14 @@
+set (THIRD_PARTY_MODULE_PATH "${PROJECT_SOURCE_DIR}/third-party")
+
+# Catch library
+set(CATCH_MODULE_PATH "${THIRD_PARTY_MODULE_PATH}/Catch")
+set(CATCH_INCLUDE_PATH "${CATCH_MODULE_PATH}/include")
+
+# spdlog library
+set(SPDLOG_MODULE_PATH "${THIRD_PARTY_MODULE_PATH}/spdlog")
+set(SPDLOG_INCLUDE_PATH "${SPDLOG_MODULE_PATH}/include")
+
+# export header only libs (TODO check for better way to do this)
+set(CATCH_INCLUDE_PATH ${CATCH_INCLUDE_PATH} PARENT_SCOPE)
+set(SPDLOG_INCLUDE_PATH ${SPDLOG_INCLUDE_PATH} PARENT_SCOPE)
+

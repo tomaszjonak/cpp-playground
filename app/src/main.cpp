@@ -1,7 +1,8 @@
 #include <iostream>
+#include "spdlog/spdlog.h"
+//#include "logger.h"
 
 int main() {
-    std::cout << "Hello world\n";
 
     return 0;
 }
