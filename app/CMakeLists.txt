@@ -16,7 +16,8 @@ add_subdirectory(${APP_SOURCE_PATH})
 add_executable(${APP_NAME} ${SOURCE})
 
 # Target linker search path
-target_include_directories(${APP_NAME} PRIVATE
-    ${SPDLOG_INCLUDE_PATH}
-)
+target_link_libraries(${APP_NAME} thirdparty_spdlog)
+
+# get_target_property(foo ${APP_NAME} INCLUDE_DIRECTORIES)
+# message("${APP_NAME} includes ${foo}")
 
