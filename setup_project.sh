@@ -1,6 +1,7 @@
 #!/bin/bash
 
-[ -e bin ] && rm -rf bin/* || mkdir bin
-cd bin
-cmake ..
-cd -
+BUILD_DIR=build
+
+[ -e $BUILD_DIR ] && rm -rf $BUILD_DIR/*
+cmake -H. -B$BUILD_DIR
+
