@@ -4,9 +4,11 @@ set (THIRD_PARTY_MODULE_PATH "${PROJECT_SOURCE_DIR}/third-party")
 set(CATCH_MODULE_PATH "${THIRD_PARTY_MODULE_PATH}/Catch")
 set(CATCH_INCLUDE_PATH "${CATCH_MODULE_PATH}/include")
 
+include("${CATCH_MODULE_PATH}/contrib/ParseAndAddCatchTests.cmake")
+
 add_library(thirdparty_catch INTERFACE)
 target_include_directories(thirdparty_catch INTERFACE
-    ${SPDLOG_INCLUDE_PATH}
+    ${CATCH_INCLUDE_PATH}
 )
 
 # spdlog library

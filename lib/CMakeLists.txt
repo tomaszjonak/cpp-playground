@@ -3,7 +3,7 @@
 set(LIB_NAME "test_lib")
 
 # configure library structure
-set(LIB_MODULE_PATH ${PROJECT_SOURCE_DIR}/lib)
+set(LIB_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR})
 set(LIB_SRC_PATH "${LIB_MODULE_PATH}/src")
 set(LIB_INCLUDE_PATH "${LIB_MODULE_PATH}/include")
 
@@ -17,4 +17,8 @@ add_library(${LIB_NAME} STATIC ${sources} ${headers})
 # Adding include path as library property
 # makes target_link_library bring aformentioned path into target scope
 target_include_directories(${LIB_NAME} PUBLIC ${LIB_INCLUDE_PATH})
+
+# testing
+enable_testing()
+add_subdirectory(test)
 

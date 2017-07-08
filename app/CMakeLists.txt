@@ -4,7 +4,7 @@
 set(APP_NAME "${PROJECT_NAME}App.out")
 
 # Application paths
-set(APP_MODULE_PATH "${PROJECT_SOURCE_DIR}/app")
+set(APP_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}")
 set(APP_SOURCE_PATH "${APP_MODULE_PATH}/src")
 
 # Add module sources

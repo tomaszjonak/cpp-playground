@@ -16,3 +16,5 @@ add_subdirectory(third-party EXCLUDE_FROM_ALL)
 add_subdirectory(lib)
 add_subdirectory(app)
 
+enable_testing()
+
