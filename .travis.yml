@@ -2,7 +2,7 @@ language: cpp
 sudo: false
 
 matrix:
-	include:
+  include:
     # Linux C++14 GCC builds
     - os: linux
       compiler: gcc
