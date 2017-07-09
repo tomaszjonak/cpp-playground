@@ -1,6 +1,9 @@
 language: cpp
 sudo: false
 
+notifications:
+  email: false
+
 matrix:
   include:
     # Linux C++14 GCC builds
